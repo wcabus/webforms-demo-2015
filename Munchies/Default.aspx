@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Munchies._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Munchies._Default" Async="True" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
@@ -74,7 +74,7 @@
 
                 // Only one "select" tag on this page
                 $('select').change(function() {
-                    onFoodTypeChanged($('select').val());
+                    onFoodTypeChanged($('select option:selected').text());
                 });
             });
         })();

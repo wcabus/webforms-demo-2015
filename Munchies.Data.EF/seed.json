@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Pizza Hut Delivery",
+        "street": "Boomsesteenweg",
+        "streetNumber": "295",
+        "postalCode": "2610",
+        "city": "Wilrijk",
+        "country": "Belgium",
+        "telephone": "",
+        "website": "",
+        "foodTypes": [
+            { "id": 7, "name": "pizza" }
+        ],
+        "deliveryZones": [
+            { "distance": 0, "postalCode": "2610" }
+        ]
+    },
+    {
+        "name": "Kingslice Pizza",
+        "street": "Boomsesteenweg",
+        "streetNumber": "357",
+        "postalCode": "2610",
+        "city": "Wilrijk",
+        "country": "Belgium",
+        "telephone": "",
+        "website": "",
+        "foodTypes": [
+            { "id": 7, "name": "pizza" }
+        ],
+        "deliveryZones": [
+            { "distance": 0, "postalCode": "2610" },
+            { "distance": 0, "postalCode": "2550" },
+            { "distance": 0, "postalCode": "2620" },
+            { "distance": 0, "postalCode": "2627" },
+            { "distance": 0, "postalCode": "2630" },
+            { "distance": 0, "postalCode": "2650" },
+            { "distance": 0, "postalCode": "2660" },
+            { "distance": 0, "postalCode": "2850" }
+        ]
+    },
+    {
+        "name": "Pizza Talia",
+        "street": "Liersesteenweg",
+        "streetNumber": "93",
+        "postalCode": "2640",
+        "city": "Mortsel",
+        "country": "Belgium",
+        "telephone": "",
+        "website": "",
+        "foodTypes": [
+            { "id": 5, "name": "pasta" },
+            { "id": 7, "name": "pizza" }
+        ],
+        "deliveryZones": [
+            { "distance": 0, "postalCode": "2100" },
+            { "distance": 0, "postalCode": "2150" },
+            { "distance": 0, "postalCode": "2160" },
+            { "distance": 0, "postalCode": "2530" },
+            { "distance": 0, "postalCode": "2531" },
+            { "distance": 0, "postalCode": "2540" },
+            { "distance": 0, "postalCode": "2547" },
+            { "distance": 0, "postalCode": "2550" },
+            { "distance": 0, "postalCode": "2600" },
+            { "distance": 0, "postalCode": "2610" },
+            { "distance": 0, "postalCode": "2640" },
+            { "distance": 0, "postalCode": "2650" }
+        ]
+    },
+    {
+        "name": "Orient Kitchen",
+        "street": "Paardenmarkt",
+        "streetNumber": "103a",
+        "postalCode": "2000",
+        "city": "Antwerpen",
+        "country": "Belgium",
+        "telephone": "",
+        "website": "",
+        "foodTypes": [
+            { "id": 3, "name": "chinese food" },
+            { "id": 4, "name": "indian food" }
+        ],
+        "deliveryZones": [
+            { "distance": 0, "postalCode": "2000" },
+            { "distance": 0, "postalCode": "2018" },
+            { "distance": 0, "postalCode": "2020" },
+            { "distance": 0, "postalCode": "2030" },
+            { "distance": 0, "postalCode": "2050" },
+            { "distance": 0, "postalCode": "2060" },
+            { "distance": 0, "postalCode": "2070" },
+            { "distance": 0, "postalCode": "2100" },
+            { "distance": 0, "postalCode": "2110" },
+            { "distance": 0, "postalCode": "2140" },
+            { "distance": 0, "postalCode": "2150" },
+            { "distance": 0, "postalCode": "2160" },
+            { "distance": 0, "postalCode": "2170" },
+            { "distance": 0, "postalCode": "2180" },
+            { "distance": 0, "postalCode": "2600" },
+            { "distance": 0, "postalCode": "2610" },
+            { "distance": 0, "postalCode": "2640" },
+            { "distance": 0, "postalCode": "2660" },
+            { "distance": 0, "postalCode": "2900" },
+            { "distance": 0, "postalCode": "2930" },
+            { "distance": 0, "postalCode": "2970" },
+            { "distance": 0, "postalCode": "9120" }
+        ]
+    },
+    {
+        "name": "Wilrijks Kiekekot",
+        "street": "Jules Moretuslei",
+        "streetNumber": "313",
+        "postalCode": "2610",
+        "city": "Wilrijk",
+        "country": "Belgium",
+        "telephone": "",
+        "website": "",
+        "foodTypes": [
+            { "id": 2, "name": "chicken" },
+            { "id": 7, "name": "pizza" }
+        ],
+        "deliveryZones": [
+            { "distance": 0, "postalCode": "2000" },
+            { "distance": 0, "postalCode": "2018" },
+            { "distance": 0, "postalCode": "2020" },
+            { "distance": 0, "postalCode": "2600" },
+            { "distance": 0, "postalCode": "2610" },
+            { "distance": 0, "postalCode": "2620" },
+            { "distance": 0, "postalCode": "2627" },
+            { "distance": 0, "postalCode": "2630" },
+            { "distance": 0, "postalCode": "2640" },
+            { "distance": 0, "postalCode": "2650" },
+            { "distance": 0, "postalCode": "2660" },
+            { "distance": 0, "postalCode": "2830" },
+            { "distance": 0, "postalCode": "2840" },
+            { "distance": 0, "postalCode": "2845" },
+            { "distance": 0, "postalCode": "2850" }
+        ]
+    },
+    {
+        "name": "Sushi Palace",
+        "street": "Jules Moretuslei",
+        "streetNumber": "379",
+        "postalCode": "2610",
+        "city": "Wilrijk",
+        "country": "Belgium",
+        "telephone": "",
+        "website": "",
+        "foodTypes": [
+            { "id": 2, "name": "chinese food" },
+            { "id": 8, "name": "sushi" }
+        ],
+        "deliveryZones": [
+            { "distance": 0, "postalCode": "2020" },
+            { "distance": 0, "postalCode": "2150" },
+            { "distance": 0, "postalCode": "2530" },
+            { "distance": 0, "postalCode": "2540" },
+            { "distance": 0, "postalCode": "2600" },
+            { "distance": 0, "postalCode": "2610" },
+            { "distance": 0, "postalCode": "2640" },
+            { "distance": 0, "postalCode": "2660" }
+        ]
+    }
+]
