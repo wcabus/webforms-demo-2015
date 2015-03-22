@@ -52,11 +52,9 @@ namespace Munchies
                 return;
             }
 
-            int? foodTypeId = GetSelectedFoodType();
-
             try
             {
-                var data = FindRestaurantQuery.Execute(postalCode, foodTypeId);
+                var data = FindRestaurantQuery.Execute(postalCode, GetSelectedFoodType());
 
                 lstResults.Visible = true;
                 lstResults.DataSource = data;
