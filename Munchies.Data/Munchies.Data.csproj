@@ -42,10 +42,9 @@
     <Compile Include="DeliveryZone.cs" />
     <Compile Include="FoodType.cs" />
     <Compile Include="IDbContext.cs" />
-    <Compile Include="Repositories\IAsyncReaderRepository.cs" />
-    <Compile Include="Repositories\IAsyncWriterRepository.cs" />
-    <Compile Include="Repositories\IReaderRepository.cs" />
-    <Compile Include="Repositories\IWriterRepository.cs" />
+    <Compile Include="Queries\IFindRestaurantQuery.cs" />
+    <Compile Include="Queries\IGetFoodTypesQuery.cs" />
+    <Compile Include="Queries\IQuery.cs" />
     <Compile Include="Restaurant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

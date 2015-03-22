@@ -145,8 +145,8 @@
         "telephone": "",
         "website": "",
         "foodTypes": [
-            { "id": 2, "name": "chinese food" },
-            { "id": 8, "name": "sushi" }
+            { "id": 3, "name": "chinese food" },
+            { "id": 9, "name": "sushi" }
         ],
         "deliveryZones": [
             { "distance": 0, "postalCode": "2020" },

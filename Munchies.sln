@@ -18,10 +18,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A111BE
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{4DA360AB-7AD0-4885-ABD6-351068DEEF48}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munchies.Framework", "Munchies.Framework\Munchies.Framework.csproj", "{9B6AFFF5-C6A1-4C55-AC2B-AD306BE54AE0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,10 +36,6 @@ Global
 		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9B6AFFF5-C6A1-4C55-AC2B-AD306BE54AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B6AFFF5-C6A1-4C55-AC2B-AD306BE54AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B6AFFF5-C6A1-4C55-AC2B-AD306BE54AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B6AFFF5-C6A1-4C55-AC2B-AD306BE54AE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +43,5 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{08C79352-22EF-4B99-8B82-973ABFA7DA0D} = {93B0C72A-2D40-4B51-9972-0F158FEEE46B}
 		{6C4FAC82-63F5-419F-9759-565F0B379C97} = {93B0C72A-2D40-4B51-9972-0F158FEEE46B}
-		{9B6AFFF5-C6A1-4C55-AC2B-AD306BE54AE0} = {4DA360AB-7AD0-4885-ABD6-351068DEEF48}
 	EndGlobalSection
 EndGlobal
