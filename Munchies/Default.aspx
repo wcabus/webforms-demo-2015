@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Munchies._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Munchies._Default" Async="True" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
@@ -10,7 +10,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12 text-center-lg text-center-md"> <!--  hidden-sm hidden-xs -->
+        <div class="col-md-12 text-center-lg text-center-md">
             <div class="form-inline">
                 <div class="form-group">
                     <asp:Label runat="server" AssociatedControlID="ddlFoodType">I would like some&nbsp;</asp:Label>
@@ -20,18 +20,31 @@
                     <asp:Label runat="server" AssociatedControlID="txtPostalCode">&nbsp;delivered near&nbsp;</asp:Label>
                     <asp:TextBox runat="server" ID="txtPostalCode" Width="70" placeholder="1000" CssClass="form-control" />
                 </div>
-                <button type="submit" runat="server" class="btn btn-default" OnServerClick="WhenGoClicked" style="width: 100px">
+                <button type="submit" runat="server" class="btn btn-primary" OnServerClick="WhenGoClicked" style="width: 100px">
                     <i class="glyphicon glyphicon-search"></i> Go!
                 </button>
             </div>
+            <asp:Label ID="lblErrors" CssClass="text-warning text-center" runat="server" />
         </div>
-        <%--<div class="hidden-lg hidden-md">
-            
-        </div>--%>
         <div class="col-md-12 text-center">
             <div id="placeholder" style="font-family: courier, monospace; font-size: 12pt; line-height: 13pt;"></div>
         </div>
     </div>
+
+    <div class="row">
+        <asp:ListView ID="lstResults" runat="server" Visible="false" ItemType="Munchies.Data.Restaurant">
+            <ItemTemplate>
+                <div class="col-md-12">
+                   <h3><%# Item.Name %></h3>
+                   <address>
+                       <strong><%# Item.Street %> <%# Item.StreetNumber %></strong><br />
+                       <%# Item.PostalCode %> <%# Item.City %>
+                   </address>
+                </div>
+            </ItemTemplate>
+        </asp:ListView>
+    </div>
+
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAY3u10BmxKjjJaPn4j7Lo_rHmGXZVK7zE"></script>
     <script type="text/javascript">
         (function () {
@@ -66,7 +79,7 @@
 
                 if (Modernizr.geolocation) {
                     var $input = $('#<%= txtPostalCode.ClientID %>');
-                    if ($input.val() === '') {
+                    if ($input.data('init') === true) {
                         // We can ask this browser where the user is located
                         navigator.geolocation.getCurrentPosition(setPosition);
                     }
@@ -74,7 +87,7 @@
 
                 // Only one "select" tag on this page
                 $('select').change(function() {
-                    onFoodTypeChanged($('select').val());
+                    onFoodTypeChanged($('select option:selected').text());
                 });
             });
         })();

@@ -5,6 +5,19 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munchies", "Munchies\Munchies.csproj", "{20C642D9-2E2F-47B4-8582-7F72EBCEDAE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munchies.Data", "Munchies.Data\Munchies.Data.csproj", "{08C79352-22EF-4B99-8B82-973ABFA7DA0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{93B0C72A-2D40-4B51-9972-0F158FEEE46B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munchies.Data.EF", "Munchies.Data.EF\Munchies.Data.EF.csproj", "{6C4FAC82-63F5-419F-9759-565F0B379C97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A111BE0B-33EA-4053-B564-471CC3549109}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +28,20 @@ Global
 		{20C642D9-2E2F-47B4-8582-7F72EBCEDAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20C642D9-2E2F-47B4-8582-7F72EBCEDAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20C642D9-2E2F-47B4-8582-7F72EBCEDAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C79352-22EF-4B99-8B82-973ABFA7DA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C79352-22EF-4B99-8B82-973ABFA7DA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C79352-22EF-4B99-8B82-973ABFA7DA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C79352-22EF-4B99-8B82-973ABFA7DA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4FAC82-63F5-419F-9759-565F0B379C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08C79352-22EF-4B99-8B82-973ABFA7DA0D} = {93B0C72A-2D40-4B51-9972-0F158FEEE46B}
+		{6C4FAC82-63F5-419F-9759-565F0B379C97} = {93B0C72A-2D40-4B51-9972-0F158FEEE46B}
 	EndGlobalSection
 EndGlobal
