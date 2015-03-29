@@ -176,6 +176,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\Supreme_pizza.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="DefaultCached.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -361,6 +362,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultCached.aspx.cs">
+      <DependentUpon>DefaultCached.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultCached.aspx.designer.cs">
+      <DependentUpon>DefaultCached.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

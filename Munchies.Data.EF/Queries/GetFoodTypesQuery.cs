@@ -26,7 +26,9 @@ namespace Munchies.Data.EF.Queries
 
         public async Task<IEnumerable<FoodType>> ExecuteAsync()
         {
-            return await _context.FoodTypes.OrderBy(f => f.Name).ToListAsync();
+            var result = await _context.FoodTypes.OrderBy(f => f.Name).ToListAsync();
+            await Task.Delay(5000); // Simulate a DB server under severe stress.
+            return result;
         }
     }
 }
